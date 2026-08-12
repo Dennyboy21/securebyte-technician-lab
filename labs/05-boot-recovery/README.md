@@ -1,0 +1,86 @@
+# Lab 05 – Boot Failure Recovery
+
+## Objective
+Diagnose and recover a Windows boot problem using the least destructive appropriate method.
+
+## Scenario
+Describe the simulated customer complaint and the fault you are trying to resolve.
+
+## Environment
+- Device / VM:
+- Operating system:
+- Hardware:
+- Network:
+- Safety/isolation notes:
+
+## Tools Used
+- 
+- 
+- 
+
+## Initial Symptoms
+- 
+- 
+- 
+
+## Pre-Work Data / Privacy Check
+- [ ] Scope and authorization defined.
+- [ ] Important data identified.
+- [ ] Backup need evaluated before invasive changes.
+- [ ] Evidence/screenshots are sanitized for public GitHub use.
+
+## Diagnostic Process
+1. 
+2. 
+3. 
+4. 
+
+## Evidence
+Record the facts that support the diagnosis. Avoid publishing credentials, serial numbers, recovery keys, personal files, or real customer information.
+
+## Findings
+**Root cause / most likely cause:**  
+
+**Why the evidence supports it:**  
+
+## Repair / Remediation
+1. 
+2. 
+3. 
+
+## Validation
+- [ ] Original symptom retested.
+- [ ] Repair outcome verified.
+- [ ] System restart/boot verified where applicable.
+- [ ] No obvious new faults introduced.
+- [ ] Security/privacy checks completed where applicable.
+
+## Security Check
+- Updates:
+- Endpoint protection:
+- Firewall:
+- Secure Boot / TPM:
+- Encryption:
+- Accounts:
+- Backup:
+- Other:
+
+## Result
+**Status:** Resolved / Improved / Further work required / Unable to reproduce
+
+## Lessons Learned
+- 
+- 
+- 
+
+## Portfolio Evidence
+Failure symptoms, recovery path, commands/actions, boot validation.
+
+Store sanitized images in `images/` and reference them here.
+
+## Skills Demonstrated
+- Troubleshooting
+- Documentation
+- Customer-data awareness
+- Validation / quality control
+- Security-first repair methodology
