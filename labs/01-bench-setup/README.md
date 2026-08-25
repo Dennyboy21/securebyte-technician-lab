@@ -50,7 +50,9 @@ Laptop purchased from Goodwill auction used/unknown history.
 <img width="1152" height="1536" alt="image-1787617464992" src="https://github.com/user-attachments/assets/b448d055-b82a-4152-9213-2325d56c5e75" />
 <img width="1152" height="1536" alt="image-1787617464992 (1)" src="https://github.com/user-attachments/assets/1e784dd8-f2ab-459f-bb6f-7420e8a624ef" />
 <img width="1152" height="1536" alt="image-1787617295641" src="https://github.com/user-attachments/assets/1436ec65-436b-4574-bbbd-5e4349029457" />
-
+<img width="1536" height="1152" alt="image-1787617580740" src="https://github.com/user-attachments/assets/500423ed-9a7b-4ccb-a451-27e7ea15eb6d" />
+<img width="1152" height="1536" alt="image-1787617564431" src="https://github.com/user-attachments/assets/b2eed70e-8bb1-4505-9e89-c5089d128d72" />
+<img width="1152" height="1536" alt="image-1787617548708" src="https://github.com/user-attachments/assets/165ffefd-2e5b-48a7-b7ee-f5106da69168" />
 
 ## Findings
 **Root cause / most likely cause:**  
