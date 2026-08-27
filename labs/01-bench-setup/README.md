@@ -29,10 +29,18 @@ Laptop purchased from Goodwill auction used/unknown history.
 - [x] Evidence/screenshots are sanitized for public GitHub use.
 
 ## Diagnostic Process
-1. BIOS Review (showed battery not installed)
-2. ePSA (showed battery not installed)
-3. 
-4. 
+1. Reviewed BIOS system information and battery status. BIOS initially reported that the battery was not installed.
+2. Ran Dell ePSA pre-boot diagnostics. Initial testing also indicated that the battery was not detected.
+3. Removed the bottom cover and visually inspected the battery, battery connector, charging jack area, and accessible motherboard connections. No obvious physical damage, swelling, or bent connector pins were observed.
+4. Disconnected the internal battery and attempted AC-only operation using the original Dell-style AC adapter.
+5. With the battery disconnected, the repeating 4-amber / 1-white front LED code was no longer present, but the system reported that the AC adapter wattage/type could not be determined.
+6. Tested the laptop with a replacement 65 W Dell AC adapter. BIOS correctly identified the replacement adapter as 65 W.
+7. Reconnected the internal battery and retested the system using the replacement AC adapter.
+8. BIOS then detected the battery, reported battery health as Excellent, and showed the battery charging normally.
+9. Charged the battery to 100% and performed an initial unplugged runtime test. Battery discharge appeared normal and Windows estimated several hours of remaining runtime.
+10. Re-ran Dell ePSA diagnostics with the laptop fully reassembled to verify operation after troubleshooting.
+11. Performed preliminary touchscreen testing using Microsoft Paint. Touch input registered across the main display area despite visible cosmetic bubbling/delamination near portions of the display.
+12. Observed that Windows brightness controls did not change panel brightness. Device Manager showed Microsoft Basic Display Adapter and several unidentified devices, indicating that the existing Windows installation is missing required Dell/Intel drivers. Brightness control operated correctly in BIOS, supporting a software/driver cause rather than a backlight hardware failure.
 
 ## Evidence
 <img width="1152" height="1536" alt="image-1787606755425" src="https://github.com/user-attachments/assets/68da93e3-d93c-4e6b-a0db-5e7844c3e0ac" />
@@ -56,20 +64,43 @@ Laptop purchased from Goodwill auction used/unknown history.
 
 ## Findings
 **Root cause / most likely cause:**  
+The original AC adapter was defective or unable to properly communicate its identification/wattage information to the laptop. The laptop itself was able to correctly identify a known-good replacement 65 W Dell adapter.
+
+The internal battery was initially suspected because BIOS and ePSA reported that it was not installed and the laptop displayed a repeating front LED fault indication. Subsequent testing showed that the battery itself was functional.
 
 **Why the evidence supports it:**  
+The original adapter powered the laptop but BIOS could not reliably identify the adapter type/wattage.
+The front LED fault indication stopped when the battery was disconnected.
+A replacement Dell 65 W adapter was immediately identified correctly by BIOS.
+After reconnecting the existing battery while using the replacement adapter, BIOS detected the battery and reported its health as Excellent.
+The battery successfully charged to 100% and operated the laptop on battery power.
+No obvious physical damage was found at the battery connector, battery pack, or accessible charging components.
+Brightness control works in BIOS but not in the current Windows installation. Device Manager shows Microsoft Basic Display Adapter and several missing platform drivers, indicating that the Windows brightness issue is software/driver related.
+The display has visible cosmetic bubbling/delamination, but touchscreen testing in Paint showed functional touch response across the tested display area.
 
 ## Repair / Remediation
-1. 
-2. 
-3. 
+1. Replaced the suspect AC adapter with a known-good 65 W Dell-compatible adapter.
+2. Reconnected and reseated the existing internal battery.
+3. Reassembled the laptop and secured the bottom cover.
+4. Verified correct AC adapter identification and battery charging in BIOS.
+5. Deferred Windows driver remediation because the existing operating-system installation is considered untrusted and will be replaced with a clean Windows installation before the system is placed on a trusted network.
 
 ## Validation
-- [ ] Original symptom retested.
-- [ ] Repair outcome verified.
-- [ ] System restart/boot verified where applicable.
-- [ ] No obvious new faults introduced.
-- [ ] Security/privacy checks completed where applicable.
+- [x] Original charging/fault symptom retested.
+- [x] Replacement AC adapter correctly identified in BIOS.
+- [x] Existing battery detected and charging.
+- [x] Battery charged to 100%.
+- [x] Battery-only operation verified.
+- [x] System restart/boot verified.
+- [x] Bottom cover reinstalled and system retested fully assembled.
+- [x] Touchscreen function tested across display area.
+- [x] No obvious new hardware faults introduced.
+- [ ] Complete clean Windows installation.
+- [ ] Install current Dell/Intel device drivers.
+- [ ] Verify Windows brightness control after graphics driver installation.
+- [ ] Complete Windows Update.
+- [ ] Perform final Device Manager check for unknown devices or warnings.
+- [ ] Complete security/privacy validation before connecting to normal production/home network use.
 
 ## Security Check
 - Updates:
@@ -82,7 +113,8 @@ Laptop purchased from Goodwill auction used/unknown history.
 - Other:
 
 ## Result
-**Status:** Resolved / Improved / Further work required / Unable to reproduce
+**Status:** Improved / Further work required
+The primary charging fault was isolated to the original AC adapter and corrected with a replacement 65 W adapter. The battery has been verified functional. Remaining work includes clean operating-system installation, driver installation, final hardware validation, security checks, and assessment of cosmetic display delamination.
 
 ## Lessons Learned
 - 
