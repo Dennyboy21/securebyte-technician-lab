@@ -15,17 +15,19 @@ Laptop purchased from Goodwill auction used/unknown history.
 
 ## Tools Used
 - BIOS / DELL ePSA diagnostics
-- 
-- 
+- Chat GPT
+- Mini Phillips screw driver
+- Anti Static wrist wrap
 
 ## Initial Symptoms
 - Front LED shows 4 amber flashes → 1 white flash → pause → repeat when the charger is plugged in.
-- 
-- 
+- Bios showed battery fault 
+- Bubbles noticed in the 4 corners of the screen
+- Brightness wouldn't go up or down despite the graphic meter moving
 
 ## Pre-Work Data / Privacy Check
 - [x] Important data identified.
-- [ ] Backup need evaluated before invasive changes.
+- [x] Backup need evaluated before invasive changes.
 - [x] Evidence/screenshots are sanitized for public GitHub use.
 
 ## Diagnostic Process
@@ -110,36 +112,43 @@ The display has visible cosmetic bubbling/delamination, but touchscreen testing 
 - [x] Bottom cover reinstalled and system retested fully assembled.
 - [x] Touchscreen function tested across display area.
 - [x] No obvious new hardware faults introduced.
-- [ ] Complete clean Windows installation.
-- [ ] Install current Dell/Intel device drivers.
-- [ ] Verify Windows brightness control after graphics driver installation.
-- [ ] Complete Windows Update.
-- [ ] Perform final Device Manager check for unknown devices or warnings.
-- [ ] Complete security/privacy validation before connecting to normal production/home network use.
+- [x] Complete clean Windows installation.
+- [x] Install current Dell/Intel device drivers.
+- [x] Verify Windows brightness control after graphics driver installation.
+- [x] Complete Windows Update.
+- [x] Perform final Device Manager check for unknown devices or warnings.
+- [x] Complete security/privacy validation before connecting to normal production/home network use.
 
 ## Security Check
-- Updates:
-- Endpoint protection:
-- Firewall:
-- Secure Boot / TPM:
-- Encryption:
-- Accounts:
-- Backup:
-- Other:
+- Updates: Clean installation of Windows 11 Home completed. Dell/Intel drivers installed and Windows Update completed.
+- Endpoint protection: Microsoft Defender real-time protection enabled. Quick scan on October 1, 2026 found 0 threats. Security intelligence reported up to date on October 2, 2026.
+- Firewall: Microsoft Defender Firewall enabled for Domain, Private, and Public network profiles.
+- Secure Boot / TPM: Secure Boot enabled; TPM 2.0 ready to use. Windows Security reports Secure Boot certificate updates temporarily paused due to a known compatibility issue. Warning persists after the BIOS update and remains unresolved.
+- Encryption: Device encryption enabled; Protection On confirmed after the BIOS update. Matching recovery-key backup verified in the Microsoft account.
+- Accounts: Personal Microsoft account currently used for testing. Removal of personal accounts and stored credentials pending final resale preparation.
 
 ## Result
-**Status:** Improved / Further work required
-The primary charging fault was isolated to the original AC adapter and corrected with a replacement 65 W adapter. The battery has been verified functional. Remaining work includes clean operating-system installation, driver installation, final hardware validation, security checks, and assessment of cosmetic display delamination.
+**Status:** Improved
+The Dell Inspiron 15 5579 now recognizes the replacement 65W charger and charges the original battery. The previous adapter-identification warning and flashing amber indicator cleared. BIOS reports battery health as Excellent, so the original battery was retained.
+
+A clean installation of Windows 11 Home is activated with a digital license. Dell/Intel drivers and Windows updates were completed, and brightness controls now work. BIOS was updated to version 1.19.0.
+
+Display condition: Visible screen bubbles remain, although they are less noticeable at maximum brightness. This condition will be disclosed before sale.
+
+Security limitation: The Secure Boot certificate-update warning remains after the BIOS update. Secure Boot is enabled, and TPM 2.0 is ready to use.
+
+Current status: Repair and Windows installation work completed. Final app-protection verification, preservation of project records, personal-account cleanup, and the final resale reset remain pending.
 
 ## Lessons Learned
-- 
-- 
-- 
+Verify charger recognition before replacing the battery. The original adapter powered the laptop, but BIOS reported it as Unknown. Testing a recognized 65W adapter restored charging and allowed the original battery to be retained.
 
-## Portfolio Evidence
-Photographs of the sanitized bench, tool inventory, and completed bench checklist.
+Compare BIOS and Windows behavior when troubleshooting. Brightness adjustment worked in BIOS but failed in Windows. Dell/Intel driver updates restored Windows brightness controls.
 
-Store sanitized images in `images/` and reference them here.
+Preserve recovery access during firmware updates. Match the recovery-key ID to the correct device before updating firmware, and confirm encryption protection is enabled afterward.
+
+Verify the outcome of each change. The BIOS update completed successfully, but the Secure Boot certificate-update warning remained. A completed update should be followed by verification of the original symptom.
+
+Document remaining limitations honestly. Screen bubbles remain despite restored brightness controls. Record unresolved issues, disclose them before sale, and mark unfinished resale preparation as pending.
 
 ## Skills Demonstrated
 - Troubleshooting
