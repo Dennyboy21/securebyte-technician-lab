@@ -29,6 +29,11 @@ A hands-on IT support, computer repair, networking, and cybersecurity lab built 
 
 The `/docs` folder contains SecureByte working forms and checklists used to make each lab resemble a professional service engagement.
 
+## Completed Case Studies
+
+- [Dell Inspiron 5579 inspection, charging repair, and refurbishment](labs/01-bench-setup/README.md)
+- [Windows audio recovery — Dell Inspiron 5579](labs/13-windows-audio-recovery/README.md): diagnosed missing audio endpoints, investigated a failed Realtek installation, and restored sound through Windows Update.
+
 ## Evidence Standard
 
 Each completed lab should include:

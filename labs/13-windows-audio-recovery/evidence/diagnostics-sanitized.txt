@@ -1,0 +1,67 @@
+WINDOWS AUDIO RECOVERY — SANITIZED DIAGNOSTIC EXCERPTS
+Dell Inspiron 5579 | Windows 11 | October 15, 2026
+
+Evidence note
+-------------
+The following is an abbreviated transcription of the supplied screenshots,
+not an unmodified terminal export or complete device-installation log.
+Personal paths and unique device identifiers have been replaced with
+explicit placeholders. Generic vendor paths and product model names remain.
+
+Sound settings before repair
+----------------------------
+Output: No output devices found
+Input: No input devices found
+Volume control: unavailable
+
+Service status before repair
+----------------------------
+Running  Windows Audio Endpoint Builder
+Running  Windows Audio
+
+Present audio-related PnP devices before repair
+----------------------------------------------
+Status  Class  FriendlyName
+OK      MEDIA  High Definition Audio Device
+OK      MEDIA  Microsoft Streaming Service Proxy
+OK      MEDIA  Intel(R) Display Audio
+
+No AudioEndpoint entries appeared in the captured filtered result.
+
+System model
+------------
+Manufacturer: Dell Inc.
+Model: Inspiron 5579
+
+Failed Dell Realtek installation
+-------------------------------
+Package: DXXVT
+Version: 6.0.1.8184
+Installer message: Install Realtek HD Audio Driver Failure!!
+Error code: 0x0000000D
+
+Device-installation log excerpt
+------------------------------
+Operation: Device Install (UpdateDriverForPlugAndPlayDevices)
+Device instance: [DEVICE_INSTANCE_REDACTED]
+INF path: C:\Program Files (x86)\Realtek\Audio\Drivers\Win64\HDXMA7.inf
+File operation: copy RtkDataProc64.dll to %TEMP%\[TEMP_FOLDER_REDACTED]
+FileQueueCommit aborting
+Error 13: The data is invalid.
+Failed to copy driver package to %TEMP%\[TEMP_FOLDER_REDACTED]
+Driver package import failed for device.
+Exit status: FAILURE(0x0000000d)
+
+Successful installation path
+----------------------------
+Windows Update > Advanced options > Optional updates > Driver updates
+Selected entry: Realtek Semiconductor Corp. - MEDIA
+Displayed date: June 13, 2017
+Displayed version: 6.0.1.8184
+Outcome: Device owner confirmed sound returned after this installation path.
+
+Validation boundary
+-------------------
+No post-fix device-list screenshot or separate microphone/headphone test was
+recorded. Persistence after a further deliberate restart and the installed
+post-fix driver version remain additional validation items.
